@@ -102,11 +102,11 @@ Table of content
 
 .gradient-bg, .about-us-wrapper.v2:before, .brand-slider-wrapper.v2:before, .brand-slider-wrapper.v3:after, .brand-slider-wrapper.v3:before {
   background: white;
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0)), color-stop(66%, #fff4f4), to(#fff4f4));
-  background: -webkit-linear-gradient(bottom, rgba(255, 255, 255, 0) 0%, #fff4f4 66%, #fff4f4 100%);
-  background: -moz-linear-gradient(bottom, rgba(255, 255, 255, 0) 0%, #fff4f4 66%, #fff4f4 100%);
-  background: -o-linear-gradient(bottom, rgba(255, 255, 255, 0) 0%, #fff4f4 66%, #fff4f4 100%);
-  background: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, #fff4f4 66%, #fff4f4 100%);
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0)), color-stop(66%, ##74b9ff), to(##74b9ff));
+  background: -webkit-linear-gradient(bottom, rgba(255, 255, 255, 0) 0%, ##74b9ff 66%, ##74b9ff 100%);
+  background: -moz-linear-gradient(bottom, rgba(255, 255, 255, 0) 0%, ##74b9ff 66%, ##74b9ff 100%);
+  background: -o-linear-gradient(bottom, rgba(255, 255, 255, 0) 0%, ##74b9ff 66%, ##74b9ff 100%);
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, ##74b9ff 66%, ##74b9ff 100%);
 }
 
 .sec-separator {
@@ -830,7 +830,7 @@ Table of content
   position: relative;
   display: inline-block;
   margin: 0 auto;
-  background-color: #fff4f4;
+  background-color: ##74b9ff;
 }
 
 .tab-swipe li {
@@ -4248,7 +4248,7 @@ header.sticky {
 }
 
 .our-service-wrapper.v2 {
-  background-color: #fff4f4 !important;
+  background-color: ##74b9ff !important;
   position: relative;
   padding-bottom: 0;
 }
@@ -5385,7 +5385,7 @@ form.appointment-form.v2 .form-group {
 }
 
 .price-plans-wrapper .price-table {
-  background-color: #fff4f4;
+  background-color: ##74b9ff;
   border-bottom: 10px solid transparent;
   padding: 0 100px;
   padding-top: 95px;
@@ -7792,7 +7792,7 @@ footer.v2 .footer-copyright ul.footer-social-menu li a {
   position: absolute;
   left: 210px;
   right: 210px;
-  background-color: #fff4f4;
+  background-color: ##74b9ff;
   height: 100%;
   top: 0;
   z-index: -1;
@@ -9115,7 +9115,7 @@ footer.v2 .footer-copyright ul.footer-social-menu li a {
 22. Bouchers Section
 ==================================*/
 .bouchers-sec-wrap .boucher {
-  background-color: #fff4f4;
+  background-color: ##74b9ff;
 }
 
 .bouchers-sec-wrap .boucher .boucher-img {

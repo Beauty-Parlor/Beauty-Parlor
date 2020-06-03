@@ -168,7 +168,7 @@ Table of content
 }
 
 .bg-primary {
-  background-color: #f9a392 !important;
+  background-color: #74b9ff !important;
 }
 
 .bg-light {
@@ -2902,9 +2902,9 @@ header.sticky {
   z-index: 2;
   padding-top: 60px;
   padding-bottom: 40px;
-  -webkit-box-shadow: 0 0 40px -8px #f9a392;
-     -moz-box-shadow: 0 0 40px -8px #f9a392;
-          box-shadow: 0 0 40px -8px #f9a392;
+  -webkit-box-shadow: 0 0 40px -8px #74b9ff;
+     -moz-box-shadow: 0 0 40px -8px #74b9ff;
+          box-shadow: 0 0 40px -8px #74b9ff;
 }
 
 .hero-sec-wrapper .single-hero-slide .hero-schedule-box:before {

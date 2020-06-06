@@ -2870,6 +2870,7 @@ header.sticky {
   padding-right: 20px;
   padding-top: 290px;
   position: relative;
+  color:white;
   overflow: hidden;
   z-index: 3;
 }

@@ -35,37 +35,26 @@
 
   ul li {
     border-radius: 10% 10% 10% 10%;
+    padding: 10px;
   }
   
   ul li:hover{
-    color: white !important;
     background: #37f;
-    padding: 10px;
+    transition:  .3s;
     
     font-weight: bold;
   }
 
     .margin{
-
       margin-top: -30px;
        margin-bottom: -30px;
     }
-
+   
 
 </style>
 
 </head>
 <body>
-
-  <!--[if lte IE 9]>
-  <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-  <![endif]-->
-
-
-
-  <!--********************************
-  ***** Code Start From Here *****
-  ******************************** -->
 
 
 
@@ -153,21 +142,22 @@
 
 
   <!-- Header Area -->
-  <header class="unvisible-default">
-    <div class="container-fluid">
-      <div class="row align-items-center">
-        <div class="col-lg-2">
+  <!-- Header Area -->
+  <header class="unvisible-default" style="background: black">
+    <div class="container-fluid" >
+      <div class="row align-items-center" >
+        <div class="col-lg-2" >
           <!-- Header Logo -->
           <div class="header-logo">
             <a href="index.html"><img src="assets/img/logo.png" alt="Logo"></a>
           </div>
         </div>
-        <div class="col-lg-8" >
+        <div class="col-lg-8">
           <!-- Main Menu Area -->
           <nav class="main-menu" >
             <ul >
               <li  >
-                <a href="index.html"  class="margin" style="color: black"  >Home</a>
+                <a href="index.html"  class="margin" style="color: white"  >Home</a>
                 <!-- Sub Menu -->
                 <!-- <ul class="sub-menu">
                   <li><a href="index.html">Home One</a></li>
@@ -175,9 +165,9 @@
                   <li><a href="index-3.html">Home Three</a></li>
                 </ul> -->
               </li>
-              <li><a href="about.html"  class="margin" style="color: black">About</a></li>
+              <li><a href="about.html"  class="margin" style="color: white">About</a></li>
               <li >
-                <a href="services.html" class="margin" style="color: black">Services</a>
+                <a href="services.html" class="margin" style="color: white">Services</a>
                 <!-- Sub Menu -->
                <!--  <ul class="sub-menu">
                   <li><a href="services.html">Services</a></li>
@@ -185,7 +175,7 @@
                 </ul> -->
               </li>
               <li>
-                <a href="portfolio.html" class="margin" style="color: black">Portfolio</a>
+                <a href="portfolio.html" class="margin" style="color: white">Portfolio</a>
                 <!-- Sub Menu -->
                 <!-- <ul class="sub-menu">
                   <li><a href="portfolio.html">Portfolio</a></li>
@@ -193,7 +183,7 @@
                 </ul> -->
               </li>
               <li >
-                <a href="news.html" class="margin" style="color: black">News</a>
+                <a href="news.html" class="margin" style="color: white">News</a>
                 <!-- Sub Menu -->
                 <!-- <ul class="sub-menu">
                   <li><a href="news.html">News</a></li>
@@ -201,7 +191,7 @@
                 </ul> -->
               </li>
               <li class="menu-item-has-children">
-                <a href="#" class="margin" style="color: black">Pages</a>
+                <a href="#" class="margin" style="color: white">Pages</a>
                 <!-- Sub Menu -->
                 <ul class="sub-menu">
                   <li><a href="team.html">Team</a></li>
@@ -213,7 +203,8 @@
                   <li><a href="error.html">Error Page</a></li>
                 </ul>
               </li>
-              <li><a href="contact.html" class="margin" style="color: black" >Contact</a></li>
+              <li><a href="contact.html"  style="color: white; margin-top: -30px;
+                       margin-bottom: -30px;" >Contact</a></li>
             </ul>
           </nav>
           <!-- Main Menu Area end -->
@@ -238,7 +229,6 @@
 
 
 
-
   <!-- header Two -->
   <div class="header-tow-wrapper">
     <div class="container-fluid">
@@ -253,7 +243,7 @@
         <div class="col-lg-4 wow zoomIn" data-wow-delay="0.3s">
           <ul>
             <li >
-              <a href="index.html" style="color: #F0E68C">Home</a>
+              <a href="index.html" style="color: #F0E68C" class="margin">Home</a>
               <!-- Sub Menu -->
               <!-- <ul class="sub-menu">
                 <li><a href="index.html">Home One</a></li>
@@ -261,9 +251,9 @@
                 <li><a href="index-3.html">Home Three</a></li>
               </ul> -->
             </li>
-            <li><a href="about.html" style="color: #F0E68C	">About</a></li>
+            <li><a href="about.html" style="color: #F0E68C	" class="margin">About</a></li>
             <li>
-              <a href="services.html" style="color: #F0E68C">Services</a>
+              <a href="services.html" style="color: #F0E68C" class="margin">Services</a>
               <!-- Sub Menu -->
               <!-- <ul class="sub-menu">
                 <li><a href="services.html">Services</a></li>
@@ -275,7 +265,7 @@
         <div class="col-xl-4 col-lg-3 text-right zoomIn wow" data-wow-delay="0.3s">
           <ul>
             <li>
-              <a href="news.html" style="color: #F0E68C">News</a>
+              <a href="news.html" style="color: #F0E68C" class="margin">News</a>
               <!-- Sub Menu -->
               <!-- <ul class="sub-menu">
                 <li><a href="news.html">News</a></li>
@@ -283,7 +273,7 @@
               </ul> -->
             </li>
             <li class="menu-item-has-children">
-              <a href="#" style="color: #F0E68C">Pages</a>
+              <a href="#" style="color: #F0E68C" class="margin">Pages</a>
               <!-- Sub Menu -->
               <ul class="sub-menu">
                 <li><a href="team.html">Team</a></li>
@@ -294,10 +284,10 @@
                 <li><a href="faq.html">FAQ</a></li>
                 <li><a href="error.html">Error Page</a></li>
                 <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="portfolio-details.html">Portfolio Deatils</a></li>
+                <li><a href="portfolio-details.html" >Portfolio Deatils</a></li>
               </ul>
             </li>
-            <li><a href="contact.html" style="color: #F0E68C">Contact</a></li>
+            <li><a href="contact.html" style="color: #F0E68C" class="margin">Contact</a></li>
           </ul>
         </div>
         <div class="col-lg-2 wow fadeInRight" data-wow-delay="0.3s">

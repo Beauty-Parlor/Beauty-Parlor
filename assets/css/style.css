@@ -533,18 +533,18 @@ Table of content
 .circle-btn {
   display: inline-block;
   border: none;
-  font-size: 16px;
+  font-size: 13px;
   background-color: #fff;
-  margin: 0 5px;
+  margin: 0 3px;
   position: relative;
   z-index: 1;
   text-align: center;
   -webkit-box-shadow: 0 6px 24px -15px #74b9ff;
      -moz-box-shadow: 0 6px 24px -15px #74b9ff;
           box-shadow: 0 6px 24px -15px #74b9ff;
-  width: 60px;
-  height: 60px;
-  line-height: 60px;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
   -webkit-border-radius: 50%;
      -moz-border-radius: 50%;
           border-radius: 50%;

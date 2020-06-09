@@ -2526,6 +2526,8 @@ element start
 header {
   padding-left: 75px;
   padding-right: 85px;
+  padding-top: 7px;
+  padding-bottom: 7px;
   position: -webkit-sticky;
   position: sticky;
   top: 0;

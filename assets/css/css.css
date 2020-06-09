@@ -1,0 +1,41 @@
+nav ul li {
+    border-radius: 10% 10% 10% 10%;
+    padding: 10px ;
+  }
+
+  nav ul li:hover{
+
+    color: white !important;
+
+    background: #37f;
+    transition:  .3s;
+    
+    font-weight: bold;
+  }
+
+  span ul li {
+    border-radius: 10% 10% 10% 10%;
+    padding: 10px ;
+  }
+
+  span ul li:hover{
+
+    color: white !important;
+
+    background: #37f;
+    transition:  .3s;
+    
+    font-weight: bold;
+  }
+
+    .margin{
+
+      margin-top: -30px;
+       margin-bottom: -30px;
+
+
+      margin-top: -30px;
+       margin-bottom: -30px;
+
+    }
+   

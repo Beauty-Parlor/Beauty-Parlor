@@ -37,7 +37,7 @@
 <body>
 
   <script type="text/javascript">
-    function myFun(){
+   function myFun(){
     var FirstName=document.getElementById('FirstName').value;
     var LastName=document.getElementById('LastName').value;
     var Email=document.getElementById('email').value;
@@ -60,7 +60,7 @@
         document.getElementById('errFirstName').innerHTML="Please Enter Valid Name.";
       }
       
-   if(reg1.test(FirstName))
+   if(reg2.test(LastName))
       {
         document.getElementById('errLastName').innerHTML="";
       }
@@ -77,6 +77,7 @@
 			{
 				document.getElementById('errEmail').innerHTML="Please Enter Valid Email.";
       }
+
       if(reg4.test(MobileNo))
 			{
 				document.getElementById('errMobile').innerHTML="";
@@ -541,7 +542,7 @@
 
         <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
          
-          <form action="#"  class="appointment-form bg-light" onclick="myFun()">
+          <form action="#"  class="appointment-form bg-light">
             <!-- Form Title -->
             <div class="form-title d-flex">
               <div class="title-icon ">
@@ -559,7 +560,7 @@
                 <label class="sr-only" for="firstName">First Name</label>
              
                 <input id="FirstName" value="" class="form-control" type="text" name="firstName" placeholder="First name">
-                <h6  id="errFirstName"  style="color: red;"></h6>
+                <h6  id="errFirstName"  style="color: red; padding-top: 10px;"></h6>
             
                
               </div>
@@ -567,19 +568,19 @@
               <div class="form-group col-md-6">
                 <label class="sr-only" for="lastName">Last Name</label>
                 <input id="LastName" class="form-control" type="text" name="LastName" placeholder="Last name">
-                <h6  id="errLastName"  style="color: red;"></h6>
+                <h6  id="errLastName"  style="color: red; padding-top: 10px;"></h6>
               </div>
               <!-- Single Input -->
               <div class="form-group col-md-6">
                 <label class="sr-only" for="email">Email Address</label>
                 <input id="email" class="form-control" type="email" name="email" placeholder="Email address">
-                <h6  id="errEmail"  style="color: red;"></h6>
+                <h6  id="errEmail"  style="color: red; padding-top: 10px;"></h6>
               </div>
               <!-- Single Input -->
               <div class="form-group col-md-6">
                 <label class="sr-only" for="number">Phone Number</label>
-                <input id="number" class="form-control" type="number" name="number" placeholder="Phone number">
-                <h6  id="errMobile"  style="color: red;"></h6>
+                <input id="number" class="form-control" type="text" name="number" placeholder="Phone number">
+                <h6  id="errMobile"  style="color: red; padding-top: 10px;"></h6>
               </div>             
               <!-- Single Input -->
               <div class="form-group col-12 select-box-wrap">

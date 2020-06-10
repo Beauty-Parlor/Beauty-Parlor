@@ -2725,7 +2725,7 @@ header.sticky {
 }
 
 .header-tow-wrapper {
-  padding: 35px 115px;
+  padding: 5px 115px;
   position: absolute;
   left: 0;
   right: 0;
@@ -2766,7 +2766,7 @@ header.sticky {
   font-family: "Prata", serif;
   text-transform: capitalize;
   font-weight: 400;
-  padding: 25px 0;
+  padding: 35px 0;
   display: block;
 }
 

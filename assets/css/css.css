@@ -1,38 +1,36 @@
 nav ul li {
     border-radius: 10% 10% 10% 10%;
     padding: 10px ;
+    font-weight: bold !important;
   }
 
   nav ul li:hover{
 
     color: white !important;
 
-    background: #37f;
-    transition:  .3s;
+    background: rgba(255,255,205, 0.402);
+    transition: all .3s;
     
-    font-weight: bold;
+    font-weight: bold !important;
   }
 
   span ul li {
     border-radius: 10% 10% 10% 10%;
     padding: 10px ;
+    font-weight: bold !important;
   }
 
   span ul li:hover{
 
     color: white !important;
 
-    background: #37f;
-    transition:  .3s;
+    background: rgba(255,255,255, 0.402);
+    transition: all .3s;
     
-    font-weight: bold;
+    font-weight: bold !important;
   }
 
     .margin{
-
-      margin-top: -30px;
-       margin-bottom: -30px;
-
 
       margin-top: -30px;
        margin-bottom: -30px;

@@ -1,33 +1,40 @@
 nav ul li {
     border-radius: 10% 10% 10% 10%;
-    padding: 10px ;
-    font-weight: bold !important;
+    padding: 10px;
+    color: #F0E68C;
+    font-weight: 600;
   }
 
   nav ul li:hover{
     background: rgba(255,255,205, 0.402);
     transition: all .3s;
-    
-    font-weight: bold !important;
+    color: #F0E68C;
+    padding: 10px;
   }
 
   span ul li {
     border-radius: 10% 10% 10% 10%;
-    padding: 10px ;
+    padding: 10px;
     font-weight: bold !important;
   }
 
   span ul li:hover{
     background: rgba(255,255,255, 0.402);
     transition: all .3s;
-    
+
     font-weight: bold !important;
   }
 
     .margin{
-
       margin-top: -30px;
-       margin-bottom: -30px;
-
+      margin-bottom: -30px;
+    }
+    .active
+    {
+      background: rgba(255,255,255, 0.402); 
+      color: #F0E68C;
+      border-radius: 10% 10% 10% 10%;
+      padding: 10px !important;
+      transition: all .3s;
     }
    

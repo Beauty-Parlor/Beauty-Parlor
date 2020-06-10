@@ -2725,7 +2725,7 @@ header.sticky {
 }
 
 .header-tow-wrapper {
-  padding: 35px 115px;
+  padding: 5px 115px;
   position: absolute;
   left: 0;
   right: 0;
@@ -2766,7 +2766,7 @@ header.sticky {
   font-family: "Prata", serif;
   text-transform: capitalize;
   font-weight: 400;
-  padding: 25px 0;
+  padding: 35px 0;
   display: block;
 }
 
@@ -5244,8 +5244,9 @@ form.appointment-form.v2 .form-group {
 }
 
 .about-funfact-wrapper .inner-quote .quote-img {
-  width: 140px;
+  width: 400px;
   margin-right: 20px;
+  
 }
 
 .about-funfact-wrapper .inner-quote .quote-content {
@@ -5279,7 +5280,7 @@ form.appointment-form.v2 .form-group {
 
 .about-funfact-wrapper .counter-box-wrapper .single-counter span {
   color: #fff;
-  font-size: 80px;
+  font-size: 50px;
   line-height: 1;
   font-family: "Prata", serif;
   position: relative;

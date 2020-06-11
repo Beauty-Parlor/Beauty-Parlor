@@ -10848,6 +10848,19 @@ aside.widget-area .widget.advertise-widget .box .title {
   -moz-transition: all ease 1s;
   transition: all ease 1s;
 }
+.footer-widget-tweet i{
+    color: #99a0a3;
+    margin-right: 18px;
+}
+.footer-widget-tweet .btn-theme{
+    background: #1c95de;
+    font-size: 13px;
+    margin-top: 30px; 
+}
+.footer-widget-tweet .btn-theme i{
+    margin: 0;
+    color: #FFF;
+}
 
 /*=======================
 element End

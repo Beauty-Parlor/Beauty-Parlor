@@ -72,6 +72,30 @@
     </div>
   </div> -->
 
+  <script type="text/javascript">
+
+    function myFun(){
+
+      var Email=document.getElementById('email').value;
+         var pattern3="^[a-zA-Z@]"; 
+        var reg3 = new RegExp(pattern3);
+
+        
+        if(reg3.test(Email))
+        {
+            document.getElementById('errEmail').innerHTML="";
+          //  document.getElementById('errEmail').innerHTML="Please Enter Valid Email.";
+        }
+        else
+        {
+          document.getElementById('errEmail').innerHTML="Enter Valid E-mail Address.";
+         }
+
+      
+    }
+        
+</script>
+
 
   <!-- Overly Sidebar -->
   <div class="overly-sidebar-wrapper d-none d-lg-block">
@@ -383,7 +407,9 @@
             <form action="#" class="subscribe-form d-md-flex">
               <label for="email" class="sr-only"></label>
               <input type="text" id="email" name="email" placeholder="Enter your email address">
-              <button type="submit">Subscribe Now</button>
+              <h6  id="errEmail"  style="color: red; padding-top: 22px;font-weight: bold;padding-right: 15px; font-size: 14px;">
+              </h6>
+              <button type="reset" onclick =" myFun()">Subscribe Now</button>
             </form>
           </div>
         </div>

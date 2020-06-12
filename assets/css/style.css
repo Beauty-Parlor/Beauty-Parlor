@@ -5615,6 +5615,7 @@ form.appointment-form.v2 .form-group {
   width: 50%;
   background-color: #211e1c;
   padding: 10px 130px;
+  padding-top: 4px;
   /*padding-right: 250px;*/
   background-image: url("../img/bg-img/features-pattern-bg.png");
   -webkit-background-size: cover;

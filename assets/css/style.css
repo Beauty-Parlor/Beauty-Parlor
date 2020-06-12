@@ -5614,8 +5614,9 @@ form.appointment-form.v2 .form-group {
 .price-plans-wrapper .price-plan-features .price-features-content {
   width: 50%;
   background-color: #211e1c;
-  padding: 80px 200px;
-  padding-right: 250px;
+  padding: 10px 130px;
+  padding-top: 4px;
+  /*padding-right: 250px;*/
   background-image: url("../img/bg-img/features-pattern-bg.png");
   -webkit-background-size: cover;
      -moz-background-size: cover;

@@ -5427,7 +5427,7 @@ form.appointment-form.v2 .form-group {
 10. Price Plans
 ==================================*/
 .price-plans-wrapper .section-title {
-  margin-bottom: 30px;
+  margin-bottom: 60px;
 }
 
 .price-plans-wrapper .price-plans-content {
@@ -5614,8 +5614,7 @@ form.appointment-form.v2 .form-group {
 .price-plans-wrapper .price-plan-features .price-features-content {
   width: 50%;
   background-color: #211e1c;
-  padding: 10px 70px;
-
+  padding: 10px 130px;
   /*padding-right: 250px;*/
   background-image: url("../img/bg-img/features-pattern-bg.png");
   -webkit-background-size: cover;
@@ -8230,8 +8229,8 @@ footer.v2 .footer-copyright ul.footer-social-menu li a {
 }
 
 .our-team-wrapper .container > .row {
-  margin-left: -5px;
-  margin-right: -5px;
+   margin-left: 0;
+  margin-right: 0;
 }
 
 .our-team-wrapper .container > .row.team-slider-active .slick-track > div {

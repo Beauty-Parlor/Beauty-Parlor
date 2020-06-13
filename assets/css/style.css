@@ -2981,8 +2981,8 @@ header.sticky {
 }
 
 .hero-sec-wrapper .single-hero-slide .hero-content .hero-title {
-  font-size: 72px;
-  line-height: 90px;
+  font-size: 65px;
+  line-height: 80px;
   margin-bottom: 17px;
   text-transform: capitalize;
 }
@@ -2994,7 +2994,7 @@ header.sticky {
 
 .hero-sec-wrapper .single-hero-slide .hero-schedule-box {
   position: absolute;
-  bottom: 70px;
+  bottom: 220px;
   right: 200px;
   width: 100%;
   max-width: 340px;

@@ -14653,7 +14653,7 @@ a .material-icons {
 }
 .sidebar .logo .simple-text {
     text-transform: uppercase;
-    padding: 5px 0;
+    padding: 5px 20px;
     display: inline-block;
     font-size: 15px;
     color: #3c4858;

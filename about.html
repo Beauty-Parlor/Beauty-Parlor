@@ -57,11 +57,22 @@
           function myFun(){
 
             var Email=document.getElementById('email').value;
-               var pattern3="^[a-zA-Z@]"; 
+            var SubEmail=document.getElementById('subscribeEmail').value;
+               var pattern3="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 4}$"; 
       	  		var reg3 = new RegExp(pattern3);
+              
 
               
       			  if(reg3.test(Email))
+	        		{
+			          	document.getElementById('errEmail').innerHTML="";
+                //  document.getElementById('errEmail').innerHTML="Please Enter Valid Email.";
+		        	}
+	          	else
+	        		{
+	        			document.getElementById('errEmail').innerHTML="Enter Valid E-mail Address.";
+               }
+               if(reg3.test(SubEmail))
 	        		{
 			          	document.getElementById('errEmail').innerHTML="";
                 //  document.getElementById('errEmail').innerHTML="Please Enter Valid Email.";
@@ -129,9 +140,11 @@
       </div>
       <!-- Sidebar Subscribe Form -->
       <form action="#" class="sidebar-subscribe-form text-center">
-        <label for="subscribeEmail">Get Subscribed!</label>
+        <label for="subscribeEmail" >Get Subscribed!</label>
         <input type="text" name="subscribeEmail" id="subscribeEmail" placeholder="Enter your mail here">
-        <button type="submit"><i class="flaticon-right-arrow"></i></button>
+        <button type="button" onclick =" myFun()"><i class="flaticon-right-arrow"></i></button>
+        <span  id="errEmail"  style="color: red; padding-top: 22px;font-weight: bold;padding-right: 15px; font-size: 14px;">
+        </span>
       </form>
       <!-- Sidebar Social Links -->
       <ul class="sidebar-social-links">

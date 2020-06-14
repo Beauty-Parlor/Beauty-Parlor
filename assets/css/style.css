@@ -2994,7 +2994,8 @@ header.sticky {
 
 .hero-sec-wrapper .single-hero-slide .hero-schedule-box {
   position: absolute;
-  bottom: 220px;
+  border-radius: 13px;
+  bottom: 80px;
   right: 200px;
   width: 100%;
   max-width: 340px;
@@ -3012,7 +3013,7 @@ header.sticky {
   position: absolute;
   left: -15px;
   top: 0;
-  border-top: 15px solid #74b9ff;
+  border-top: 15px 
   border-left: 15px solid transparent;
 }
 

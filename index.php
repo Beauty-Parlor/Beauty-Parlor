@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -32,12 +33,139 @@
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/css.css">
   <style>
-	
+	#grad1 {
+	  background-color: red; /* For browsers that do not support gradients */
+	  background-image: linear-gradient(to right,  #405DE6, #5851DB, #833AB4, #C13584, #E1306C, #FD1D1D, #F56040, #FFDC80); /* Standard syntax (must be last) */
+	}
   </style>
-  <!-- Theme Responsive -->
-  <link rel="stylesheet" href="assets/css/responsive.css">
-  <script src="https://kit.fontawesome.com/2d80b9edc3.js" crossorigin="anonymous"></script>
+  <style>
+body {font-family: Arial, Helvetica, sans-serif;}
+
+#myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 999; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption {  
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)} 
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}
+</style>
+<!-- Theme Responsive -->
+<link rel="stylesheet" href="assets/css/responsive.css">
+<script src="https://kit.fontawesome.com/2d80b9edc3.js" crossorigin="anonymous"></script>
+
+<script src="https://www.w3schools.com/lib/w3.js"></script>
+<script>
+var myObject= {"customers":[
+{"CustomerName" : "Alfreds Futterkiste","City" : "Berlin","Country" : "Germany"},
+{"CustomerName" : "Berglunds snabbköp","City" : "Luleå","Country" : "Sweden"},
+{"CustomerName" : "Centro comercial Moctezuma","City" : "México D.F.","Country" : "Mexico"},
+{"CustomerName" : "Ernst Handel","City" : "Graz","Country" : "Austria"},
+{"CustomerName" : "FISSA Fabrica Inter. Salchichas S.A.","City" : "Madrid","Country" : "Spain"},
+{"CustomerName" : "Galería del gastrónomo","City" : "Barcelona","Country" : "Spain"},
+{"CustomerName" : "Island Trading","City" : "Cowes","Country" : "UK"},
+{"CustomerName" : "Königlich Essen","City" : "Brandenburg","Country" : "Germany"},
+{"CustomerName" : "Laughing Bacchus Wine Cellars","City" : "Vancouver","Country" : "Canada"},
+{"CustomerName" : "Magazzini Alimentari Riuniti","City" : "Bergamo","Country" : "Italy"},
+{"CustomerName" : "North/South","City" : "London","Country" : "UK"},
+{"CustomerName" : "Paris spécialités","City" : "Paris","Country" : "France"},
+{"CustomerName" : "Rattlesnake Canyon Grocery","City" : "Albuquerque","Country" : "USA"},
+{"CustomerName" : "Simons bistro","City" : "København","Country" : "Denmark"},
+{"CustomerName" : "The Big Cheese","City" : "Portland","Country" : "USA"},
+{"CustomerName" : "Vaffeljernet","City" : "Århus","Country" : "Denmark"},
+{"CustomerName" : "Wolski Zajazd","City" : "Warszawa","Country" : "Poland"}
+]};
+var mygyoObject= {"feedback":[
+{"date" : "14-4-2020","heading" : "Berlin","description" : "Germany"},
+{"date" : "15-5-2020","heading" : "Luleå","description" : "Sweden"},
+{"date" : "16-6-2020","heading" : "México D.F.","description" : "Mexico"},
+{"date" : "14-4-2020","heading" : "Berlin","description" : "Germany"},
+{"date" : "15-5-2020","heading" : "Luleå","description" : "Sweden"},
+{"date" : "16-6-2020","heading" : "México D.F.","description" : "Mexico"},
+{"date" : "14-4-2020","heading" : "Berlin","description" : "Germany"},
+{"date" : "15-5-2020","heading" : "Luleå","description" : "Sweden"},
+{"date" : "16-6-2020","heading" : "México D.F.","description" : "Mexico"}
+]};
+</script>
   
+
 </head>
 <body>
 
@@ -47,12 +175,11 @@
     var LastName=document.getElementById('LastName').value;
     var Email=document.getElementById('email').value;
     var MobileNo=document.getElementById('number').value;
-    var SubscribeEmail=document.getElementById('subscribeEmail').value;
       var pattern1="^[a-zA-Z]+$";
       var reg1= new RegExp(pattern1);
       var pattern2="^[a-zA-Z]+$";
       var reg2= new RegExp(pattern2);
-      var pattern3="^[[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 4}$]"; 
+      var pattern3="^[a-zA-Z@]"; 
       var reg3 = new RegExp(pattern3);
       var pattern4="^[0-9]{10}$"; 
 			var reg4 = new RegExp(pattern4);
@@ -91,14 +218,6 @@
 		else
 			{
 				document.getElementById('errMobile').innerHTML="Please Enter Valid Mobile No.";
-			}
-      if(reg3.test(SubscribeEmail))
-			{
-				document.getElementById('errEmail1').innerHTML="";
-			}
-		else
-			{
-				document.getElementById('errEmail1').innerHTML=" Enter Valid Email Address.";
 			}
   }
   </script>
@@ -152,13 +271,8 @@
       <form action="#" class="sidebar-subscribe-form text-center">
         <label for="subscribeEmail">Get Subscribed!</label>
         <input type="text" name="subscribeEmail" id="subscribeEmail" placeholder="Enter your mail here">
-        <button type="button" onclick =" myFun()"><i class="flaticon-right-arrow"></i></button>
-        <span id="errEmail"  style="color: red; padding-top: 22px;font-weight: bold;padding-right: 15px; font-size: 14px;">
-        </span>
-        
+        <button type="submit"><i class="flaticon-right-arrow"></i></button>
       </form>
-   
-      </div>
       <!-- Sidebar Social Links -->
       <ul class="sidebar-social-links">
         <li><a href="https://www.facebook.com/feelingsbeautycare" target="_blanck" class="circle-btn"><i class="flaticon-facebook"></i></a></li>
@@ -190,7 +304,7 @@
 
   <!-- Header Area -->
   <!-- Header Area -->
-  <header class="unvisible-default" style="background: black;">
+  <header class="unvisible-default" style="background: black; z-index: 10;">
     <div class="container-fluid" >
       <div class="row align-items-center" >
         <div class="col-lg-2" >
@@ -203,12 +317,19 @@
           <!-- Main Menu Area -->
           <nav class="main-menu">
             <ul>
-              <li><a href="index.html"  class="margin" style="color: #F0E68C">Home</a></li>
+              <li>
+                <a href="index.html"  class="margin" style="color: #F0E68C">Home</a>
+              </li>
               <li><a href="about.html"  class="margin" style="color: #F0E68C">About us</a></li>
               <li><a href="courses.html"  class="margin" style="color: #F0E68C">Courses</a></li>
-              <li><a href="services.html" class="margin" style="color: #F0E68C">Services</a></li>
-              <li><a href="portfolio.html" class="margin" style="color: #F0E68C">Portfolio</a></li>
-              <li><a href="contact.html"  class="margin" style="color: #F0E68C" >Contact us</a></li>
+              <li>
+                <a href="services.html" class="margin" style="color: #F0E68C">Services</a>
+              </li>
+              
+              <li>
+                <a href="portfolio.html" class="margin" style="color: #F0E68C">Portfolio</a>
+              </li>
+         <li><a href="contact.html"  class="margin" style="color: #F0E68C" >Contact us</a></li>
             </ul>
           </nav>
           <!-- Main Menu Area end -->
@@ -238,7 +359,7 @@
   <div class="header-tow-wrapper">
     <div class="container-fluid">
       <div class="row ">
-        <div class="col-xl-2 col-lg-2 wow fadeInLeft" data-wow-delay="0.3s">
+        <div class="col-xl-2 col-lg-3 wow fadeInLeft" data-wow-delay="0.3s">
           <!-- Header Two Logo -->
           <div class="header-two-logo">
             <a href="index.html"><img src="assets/img/logo.png" alt="MIxlax"></a>
@@ -253,7 +374,9 @@
             </li>
             <li><a href="about.html" style="color: #F0E68C  " class="margin">About us</a></li>
             <li><a href="courses.html" style="color: #F0E68C  " class="margin">Courses</a></li>
-            <li><a href="services.html" style="color: #F0E68C" class="margin">Services</a></li>
+            <li>
+              <a href="services.html" style="color: #F0E68C" class="margin">Services</a>
+            </li>
             <li><a href="portfolio.html" style="color: #F0E68C" class="margin">Portfolio</a></li>
             <li><a href="contact.html" style="color: #F0E68C" class="margin">Contact us</a></li>
           </ul>
@@ -291,7 +414,7 @@
             <div class="hero-content">
               <span>Beauty Salon</span>
               <h1 class="hero-title">The Home Of Care</h1>
-             <!--  <a href="contact.html" class="def-btn">Contact Us<span class="flaticon-right-arrow"></span></a> -->
+              <a href="contact.html" class="def-btn">Contact Us<span class="flaticon-right-arrow"></span></a>
             </div>
             <!-- hero content end -->
           </div>
@@ -326,7 +449,7 @@
             <div class="hero-content">
               <span>Beauty Salon</span>
               <h2 class="hero-title">The House Of Beauty</h2>
-              <!-- <a href="contact.html" class="def-btn">Contact Us <span class="flaticon-right-arrow"></span></a> -->
+              <a href="contact.html" class="def-btn">Contact Us <span class="flaticon-right-arrow"></span></a>
             </div>
             <!-- hero content end -->
           </div>
@@ -361,7 +484,7 @@
             <div class="hero-content">
               <span style="color: black">Beauty Salon</span>
               <h1 class="hero-title" style="color: black">The Essence of beauty</h1>
-              <!-- <a href="contact.html" class="def-btn">Contact Us <span class="flaticon-right-arrow"></span></a> -->
+              <a href="contact.html" class="def-btn">Contact Us <span class="flaticon-right-arrow"></span></a>
             </div>
             <!-- hero content end -->
           </div>
@@ -907,9 +1030,29 @@
   </section>
   <!-- Testomonial Area end -->
 
+<!-- Customer Review PHP -->
+<?php
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "formtest";
 
+// Create connection
+$conn = mysqli_connect($servername, $username, $password, $dbname);
+// Check connection
+if (!$conn) {
+  die("Connection failed: " . mysqli_connect_error());
+}
+$id = 1;
+$result = mysqli_query($conn, "SELECT * FROM `customer-feedback`");
+if($result){
+  if (mysqli_num_rows($result) > 0) {
+    // output data of each row
+    while($row = mysqli_fetch_assoc($result)) {
+?>
+<!-- Customer Review PHP End-->
 
-  <!-- Blog Section -->
+  <!-- Customer Review Section -->
   <section class="blog-wrapper bg-light pt-120 pb-90">
     <div class="container">
       <div class="row justify-content-center text-center ">
@@ -921,9 +1064,9 @@
           </div>
         </div>
       </div>
-      <div class="row latest-blog-slider wow fadeInUp" data-wow-delay="0.3s">
+      <div class="row latest-blog-slider wow fadeInUp" data-wow-delay="0.3s" id="id02">
         <!-- Single Blog -->
-        <div class="col-xl-4">
+        <div class="col-xl-4" w3-repeat="feedback">
           <div class="single-latest-blog ">
             <!-- Blog Image -->
             <div class="img-box">
@@ -933,76 +1076,12 @@
             <div class="latest-blog-content">
               <div class="blog-meta">
                 <p>
-                  <span><i class="flaticon-calendar"></i>14th May 2019</span>
+                  <span><i class="flaticon-calendar"></i> {{ date }} </span>
                   <!-- <span><i class="flaticon-user"></i>By Admin</span> -->
                 </p>
               </div>
-              <h3 class="blog-title">Hair Cutting </h3>
-              <p>A sweet escape… Even sweeter prices! The place that leaves you feeling great The place that beautifies your face Where we love to exceed your expectations.Indulge yourself. Thank you very much Urmi Mengar<br><br><br></p>
-            </div>
-          </div>
-        </div>
-        <!-- Single Blog end -->
-        <!-- Single Blog -->
-        <div class="col-xl-4">
-          <div class="single-latest-blog">
-            <!-- Blog Image -->
-            <div class="img-box ">
-              <img src="assets/img/blog-img/blog-img-2.jpg" alt="Blog Image">
-            </div>
-            <!-- Blog Content -->
-            <div class="latest-blog-content" >
-              <div class="blog-meta">
-                <p>
-                  <span><i class="flaticon-calendar"></i>14th March 2020</span>
-                  <!-- <span><i class="flaticon-user"></i>By Admin</span> -->
-                </p>
-              </div>
-              <h3 class="blog-title">Reception Look</h3>
-              <p>A very relaxing and rejuvenating experience. I felt a drastic change in my face instantly (in a good way of course!) The way you personally explain procedures and solve queries is outstanding. Keep up the great work.<br><br><br></p>
-            </div>
-          </div>
-        </div>
-        <!-- Single Blog end -->
-        <!-- Single Blog -->
-        <div class="col-xl-4">
-          <div class="single-latest-blog ">
-            <!-- Blog Image -->
-            <div class="img-box">
-              <img src="assets/img/blog-img/blog-img-3.jpg" alt="Blog Image">
-            </div>
-            <!-- Blog Content -->
-            <div class="latest-blog-content" >
-              <div class="blog-meta">
-                <p>
-                  <span><i class="flaticon-calendar"></i>14th March 2020</span>
-                  <!-- <span><i class="flaticon-user"></i>By Admin</span> -->
-                </p>
-              </div>
-              <h3 class="blog-title">Haldi Rasam Look</h3>
-              <p>They made me look beautiful on my wedding day. Right from the day I booked my makeup and pre-care services, I found their service to be very professional yet warm and friendly. I will strongly recommend this place.<br><br><br></p>
-            </div>
-          </div>
-        </div>
-        <!-- Single Blog end -->
-
-        <!-- Single Blog -->
-        <div class="col-xl-4">
-          <div class="single-latest-blog ">
-            <!-- Blog Image -->
-            <div class="img-box">
-              <img src="assets/img/blog-img/blog-img-4.jpg" alt="Blog Image">
-            </div>
-            <!-- Blog Content -->
-            <div class="latest-blog-content" >
-              <div class="blog-meta">
-                <p>
-                  <span><i class="flaticon-calendar"></i>14th March 2020</span>
-                  <!-- <span><i class="flaticon-user"></i>By Admin</span> -->
-                </p>
-              </div>
-              <h3 class="blog-title">Bridal Look</h3>
-              <p>I wholeheartedly appreciate you, for all the planning and efforts you made for the most special day of my life!!! You gave me the look I've always dreamed of.. Thank you very much... & really it is heart of Perfect Beauty<br><br><br></p>
+              <h3 class="blog-title"> {{ heading }} </h3>
+              <p>{{ description }}<br><br><br></p>
             </div>
           </div>
         </div>
@@ -1010,10 +1089,21 @@
       </div>
     </div>
   </section>
-  <!-- Blog Section end -->
-
-
-
+  <!-- Customer Review Section end -->
+<!-- Customer Review PHP -->
+<?php
+   }
+  }
+  else {
+    echo "0 results";
+  }
+}
+else{
+  echo "Result empty";
+}
+mysqli_close($conn);
+?>
+<!-- Customer Review PHP End-->
 
   <!-- CTA Area -->
   <!-- <section class="cta-wrapper  pt-100 pb-100 background-image" data-src="assets/img/bg-img/cta-bg-img.jpg">
@@ -1118,7 +1208,7 @@
          <!-- Single Footer Wid end -->
          <!-- single Widget -->
          <div class="col-lg-3 zoomIn wow" data-wow-delay="0.5s">
-           <div class="widget" style="padding-left: 25%;">
+           <div class="widget">
              <h3>Reach US</h3>
              <!-- footer Links -->
              <div class="footer-links-area d-flex footer-widget-tweet">
@@ -1151,7 +1241,7 @@
      <div class="container">
        <div class="row align-items-center">
          <div class="col-md-5">
-            <p>Copyright By @ Feelings Beauty Care - 2020</p>
+            <p>Copyright By@ Feelings Beauty Care - 2020</p>
           </div>
           <div class="col-md-7 text-right">
             <ul class="footer-social-menu">
@@ -1188,6 +1278,24 @@
 
   
 
+
+  <table id="id01">
+  <tr>
+    <th>Customer</th>
+    <th>City</th>
+    <th>Country</th>
+  </tr>
+  <tr w3-repeat="customers">
+    <td>{{CustomerName}}</td>
+    <td>{{City}}</td>
+    <td>{{Country}}</td>
+  </tr>
+</table>
+
+<script>
+w3.displayObject("id01", myObject);
+w3.displayObject("id02", mygyoObject);
+</script>
   
 
 
@@ -1210,6 +1318,28 @@
   <script src="assets/js/isotope.pkgd.min.js"></script>
   <script src="assets/js/jquery.datetimepicker.min.js"></script>
   <script src="my.js" ></script>
+  <script>
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById("myImg");
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+</script>
   <!-- Google Map js -->
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDC3Ip9iVC0nIxC6V14CKLQ1HZNF_65qEQ"></script>
   <!-- Main Js File -->

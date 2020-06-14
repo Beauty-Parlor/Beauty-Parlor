@@ -93,7 +93,8 @@
 
 
   .hero-sec-wrapper .single-hero-slide .hero-schedule-box {
-    right: 50px;
+    right: 120px !important;
+    bottom: 120px !important;
   }
 
 

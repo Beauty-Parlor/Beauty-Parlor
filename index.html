@@ -47,11 +47,12 @@
     var LastName=document.getElementById('LastName').value;
     var Email=document.getElementById('email').value;
     var MobileNo=document.getElementById('number').value;
+    var SubscribeEmail=document.getElementById('subscribeEmail').value;
       var pattern1="^[a-zA-Z]+$";
       var reg1= new RegExp(pattern1);
       var pattern2="^[a-zA-Z]+$";
       var reg2= new RegExp(pattern2);
-      var pattern3="^[a-zA-Z@]"; 
+      var pattern3="^[[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 4}$]"; 
       var reg3 = new RegExp(pattern3);
       var pattern4="^[0-9]{10}$"; 
 			var reg4 = new RegExp(pattern4);
@@ -90,6 +91,14 @@
 		else
 			{
 				document.getElementById('errMobile').innerHTML="Please Enter Valid Mobile No.";
+			}
+      if(reg3.test(SubscribeEmail))
+			{
+				document.getElementById('errEmail1').innerHTML="";
+			}
+		else
+			{
+				document.getElementById('errEmail1').innerHTML=" Enter Valid Email Address.";
 			}
   }
   </script>
@@ -143,8 +152,13 @@
       <form action="#" class="sidebar-subscribe-form text-center">
         <label for="subscribeEmail">Get Subscribed!</label>
         <input type="text" name="subscribeEmail" id="subscribeEmail" placeholder="Enter your mail here">
-        <button type="submit"><i class="flaticon-right-arrow"></i></button>
+        <button type="button" onclick =" myFun()"><i class="flaticon-right-arrow"></i></button>
+        <span id="errEmail"  style="color: red; padding-top: 22px;font-weight: bold;padding-right: 15px; font-size: 14px;">
+        </span>
+        
       </form>
+   
+      </div>
       <!-- Sidebar Social Links -->
       <ul class="sidebar-social-links">
         <li><a href="https://www.facebook.com/feelingsbeautycare" target="_blanck" class="circle-btn"><i class="flaticon-facebook"></i></a></li>
@@ -189,7 +203,7 @@
           <!-- Main Menu Area -->
           <nav class="main-menu">
             <ul>
-              <li><a href="index.html"  class="margin" style="color: #F0E68C">Home</a></li>
+              <li  class="active"><a href="index.html"  class="margin" style="color: #F0E68C">Home</a></li>
               <li><a href="about.html"  class="margin" style="color: #F0E68C">About us</a></li>
               <li><a href="courses.html"  class="margin" style="color: #F0E68C">Courses</a></li>
               <li><a href="services.html" class="margin" style="color: #F0E68C">Services</a></li>
@@ -233,7 +247,7 @@
         </div>
         <div class="col-lg-8 wow zoomIn" data-wow-delay="0.3s">
           <ul>
-            <li >
+            <li  class="active">
               <a href="index.html" class="margin" style="color: #F0E68C"  >Home</a>
            
             </li>

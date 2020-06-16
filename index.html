@@ -38,6 +38,8 @@
   <!-- Theme Responsive -->
   <link rel="stylesheet" href="assets/css/responsive.css">
   <script src="https://kit.fontawesome.com/2d80b9edc3.js" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  
   
 </head>
 <body>
@@ -1043,10 +1045,14 @@
        var reg3 = new RegExp(pattern3);
        var pattern4="^[0-9]{10}$"; 
        var reg4 = new RegExp(pattern4);
+       var fname = -1;
+       var lname = -1;
+       var email1 = -1;
+       var mobile1=-1;
  
     if(reg1.test(FirstName))
        {
-         document.getElementById('errFirstName').innerHTML="";
+            fname=1;
        }
      else
        {
@@ -1055,7 +1061,7 @@
        
     if(reg2.test(LastName))
        {
-         document.getElementById('errLastName').innerHTML="";
+             lname = 1;
        }
      else
        {
@@ -1064,7 +1070,7 @@
  
        if(reg3.test(Email))
        {
-         document.getElementById('errEmail').innerHTML="";
+             email1 = 1;
        }
      else
        {
@@ -1073,12 +1079,21 @@
  
        if(reg4.test(MobileNo))
        {
-         document.getElementById('errMobile').innerHTML="";
+        mobile1=1;
        }
      else
        {
          document.getElementById('errMobile').innerHTML="Please Enter Valid Mobile No.";
        }
+
+       if(fname!=1 && lname !=1 && email1 != 1 &&  mobile1!=1)
+      {
+        swal ( "Error" , "Enter Valid Data.. " , "error");
+      }
+      else
+      {
+      swal ( "Success" , "Data Entry Sucessfully  ", "success");
+      }
       
    }
    </script>

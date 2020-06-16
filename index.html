@@ -549,7 +549,7 @@
               </div>
               <!-- Single Input -->
               <div class="form-group col-12 mb-0 text-center">
-                <button class="def-btn" type="reset" onclick = "myFun()" >
+                <button class="def-btn" type="reset" onclick="myFun()">
                   Get In Touch
                   <span class="flaticon-right-arrow"></span>
                 </button>
@@ -1034,7 +1034,7 @@
      var LastName=document.getElementById('LastName').value;
      var Email=document.getElementById('email').value;
      var MobileNo=document.getElementById('number').value;
-     var SubscribeEmail=document.getElementById('subscribeEmail').value;
+     
        var pattern1="^[a-zA-Z]+$";
        var reg1= new RegExp(pattern1);
        var pattern2="^[a-zA-Z]+$";
@@ -1079,14 +1079,7 @@
        {
          document.getElementById('errMobile').innerHTML="Please Enter Valid Mobile No.";
        }
-       if(reg3.test(SubscribeEmail))
-       {
-         document.getElementById('errEmail1').innerHTML="";
-       }
-     else
-       {
-         document.getElementById('errEmail1').innerHTML=" Enter Valid Email Address.";
-       }
+      
    }
    </script>
   

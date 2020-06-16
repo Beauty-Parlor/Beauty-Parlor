@@ -42,80 +42,7 @@
 </head>
 <body>
 
-  <script type="text/javascript">
-    function getintouch()
-    {
-      var d = document.getElementById('distance').value;
-      if(d == "")
-      {
-        swal ( "Error" , "Please Enter All Detais " , "error");
-      }
-      else
-      {
-      swal ( "Success" , "Our Staff Will Contact   " , "success");
-      }
-     
-    }
-   function myFun(){
-    var FirstName=document.getElementById('FirstName').value;
-    var LastName=document.getElementById('LastName').value;
-    var Email=document.getElementById('email').value;
-    var MobileNo=document.getElementById('number').value;
-    var SubscribeEmail=document.getElementById('subscribeEmail').value;
-      var pattern1="^[a-zA-Z]+$";
-      var reg1= new RegExp(pattern1);
-      var pattern2="^[a-zA-Z]+$";
-      var reg2= new RegExp(pattern2);
-      var pattern3="^[[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 4}$]"; 
-      var reg3 = new RegExp(pattern3);
-      var pattern4="^[0-9]{10}$"; 
-			var reg4 = new RegExp(pattern4);
-
-   if(reg1.test(FirstName))
-      {
-        document.getElementById('errFirstName').innerHTML="";
-      }
-    else
-      {
-        document.getElementById('errFirstName').innerHTML="Please Enter Valid Name.";
-      }
-      
-   if(reg2.test(LastName))
-      {
-        document.getElementById('errLastName').innerHTML="";
-      }
-    else
-      {
-        document.getElementById('errLastName').innerHTML="Please Enter Valid LastName.";
-      }
-
-      if(reg3.test(Email))
-			{
-				document.getElementById('errEmail').innerHTML="";
-			}
-		else
-			{
-				document.getElementById('errEmail').innerHTML="Please Enter Valid Email.";
-      }
-
-      if(reg4.test(MobileNo))
-			{
-				document.getElementById('errMobile').innerHTML="";
-			}
-		else
-			{
-				document.getElementById('errMobile').innerHTML="Please Enter Valid Mobile No.";
-			}
-      if(reg3.test(SubscribeEmail))
-			{
-				document.getElementById('errEmail1').innerHTML="";
-			}
-		else
-			{
-				document.getElementById('errEmail1').innerHTML=" Enter Valid Email Address.";
-			}
-  }
-  </script>
+ 
 
 
   <!-- Overly Sidebar -->
@@ -620,8 +547,10 @@
               </div>
               <!-- Single Input -->
               <div class="form-group col-12 mb-0 text-center">
-                <button class="def-btn" type="reset" onclick =" myFun()">Get In Touch<span
-                    class="flaticon-right-arrow"></span></button>
+                <button class="def-btn" type="reset" onclick = "myFun()">
+                  Get In Touch
+                  <span class="flaticon-right-arrow"></span>
+                </button>
               </div>
             </div>
           </form>
@@ -1126,7 +1055,68 @@
   <!-- Main Js File -->
   <script src="assets/js/main.js"></script>
   
+ <script type="text/javascript">
+   
+   function myFun(){
+    var FirstName=document.getElementById('FirstName').value;
+    var LastName=document.getElementById('LastName').value;
+    var Email=document.getElementById('email').value;
+    var MobileNo=document.getElementById('number').value;
+    var SubscribeEmail=document.getElementById('subscribeEmail').value;
+      var pattern1="^[a-zA-Z]+$";
+      var reg1= new RegExp(pattern1);
+      var pattern2="^[a-zA-Z]+$";
+      var reg2= new RegExp(pattern2);
+      var pattern3="^[[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 4}$]"; 
+      var reg3 = new RegExp(pattern3);
+      var pattern4="^[0-9]{10}$"; 
+      var reg4 = new RegExp(pattern4);
 
+   if(reg1.test(FirstName))
+      {
+        document.getElementById('errFirstName').innerHTML="";
+      }
+    else
+      {
+        document.getElementById('errFirstName').innerHTML="Please Enter Valid Name.";
+      }
+      
+   if(reg2.test(LastName))
+      {
+        document.getElementById('errLastName').innerHTML="";
+      }
+    else
+      {
+        document.getElementById('errLastName').innerHTML="Please Enter Valid LastName.";
+      }
+
+      if(reg3.test(Email))
+      {
+        document.getElementById('errEmail').innerHTML="";
+      }
+    else
+      {
+        document.getElementById('errEmail').innerHTML="Please Enter Valid Email.";
+      }
+
+      if(reg4.test(MobileNo))
+      {
+        document.getElementById('errMobile').innerHTML="";
+      }
+    else
+      {
+        document.getElementById('errMobile').innerHTML="Please Enter Valid Mobile No.";
+      }
+      if(reg3.test(SubscribeEmail))
+      {
+        document.getElementById('errEmail1').innerHTML="";
+      }
+    else
+      {
+        document.getElementById('errEmail1').innerHTML=" Enter Valid Email Address.";
+      }
+  }
+  </script>
 
   
 </body>

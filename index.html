@@ -17,6 +17,7 @@
   <link rel="apple-touch-icon" href="assets/img/favicon1.png">
 
   <!-- All CSS -->
+  <link rel="stylesheet" href="sweetalert2.min.css">
   <link rel="stylesheet" href="assets/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/css/flaticon.css">
   <link rel="stylesheet" href="assets/css/animate.css">
@@ -42,6 +43,19 @@
 <body>
 
   <script type="text/javascript">
+    function getintouch()
+    {
+      var d = document.getElementById('distance').value;
+      if(d == "")
+      {
+        swal ( "Error" , "Please Enter All Detais " , "error");
+      }
+      else
+      {
+      swal ( "Success" , "Our Staff Will Contact   " , "success");
+      }
+     
+    }
    function myFun(){
     var FirstName=document.getElementById('FirstName').value;
     var LastName=document.getElementById('LastName').value;

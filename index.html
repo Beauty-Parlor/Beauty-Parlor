@@ -1041,7 +1041,7 @@
        var reg1= new RegExp(pattern1);
        var pattern2="^[a-zA-Z]+$";
        var reg2= new RegExp(pattern2);
-       var pattern3="^[[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 4}$]"; 
+       var pattern3="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"; 
        var reg3 = new RegExp(pattern3);
        var pattern4="^[0-9]{10}$"; 
        var reg4 = new RegExp(pattern4);
@@ -1086,13 +1086,14 @@
          document.getElementById('errMobile').innerHTML="Please Enter Valid Mobile No.";
        }
 
-       if(fname!=1 && lname !=1 && email1 != 1 &&  mobile1!=1)
+       if(fname==1 && lname ==1 && email1 == 1 &&  mobile1==1)
       {
-        swal ( "Error" , "Enter Valid Data.. " , "error");
+        swal ( "Success" , "Data Entry Sucessfully  ", "success");
       }
       else
       {
-      swal ( "Success" , "Data Entry Sucessfully  ", "success");
+      
+      swal ( "Error" , "Enter Valid Data.. " , "error");
       }
       
    }

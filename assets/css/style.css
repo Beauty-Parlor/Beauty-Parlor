@@ -100,14 +100,7 @@ Table of content
   margin-top: 120px;
 }
 
-.gradient-bg, .about-us-wrapper.v2:before, .brand-slider-wrapper.v2:before, .brand-slider-wrapper.v3:after, .brand-slider-wrapper.v3:before {
-  background: white;
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0)), color-stop(66%, ##74b9ff), to(##74b9ff));
-  background: -webkit-linear-gradient(bottom, rgba(255, 255, 255, 0) 0%, ##74b9ff 66%, ##74b9ff 100%);
-  background: -moz-linear-gradient(bottom, rgba(255, 255, 255, 0) 0%, ##74b9ff 66%, ##74b9ff 100%);
-  background: -o-linear-gradient(bottom, rgba(255, 255, 255, 0) 0%, ##74b9ff 66%, ##74b9ff 100%);
-  background: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, ##74b9ff 66%, ##74b9ff 100%);
-}
+
 
 .sec-separator {
   text-align: center;

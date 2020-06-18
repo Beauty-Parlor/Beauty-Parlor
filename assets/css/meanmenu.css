@@ -20,18 +20,23 @@ a.meanmenu-reveal {
 	left: 0;
 	right: 0;
 	top: 0;
+
 }
 
 
 .mean-container .mean-bar {
 	width: 100%;
 	position: absolute;
-	background: none;
+	background: transparent;
 	padding: 4px 0;
 	min-height: 70px;
-	right: 10px;
-	z-index: 2;
+	right: 1px;
+	z-index: 4;
 	top: -19px;
+	background-image: url(../../assets/img/black2.jpg);
+	background-color: transparent;
+	background-size: cover;
+
 }
 
 .mean-container a.meanmenu-reveal {
@@ -49,7 +54,7 @@ a.meanmenu-reveal {
 	font-size: 1px;
 	display: block;
 	font-family: Arial, Helvetica, sans-serif;
-	font-weight: 700;
+	font-weight: bolder !important;
 	font-size: 26px !important;
 }
 
@@ -64,7 +69,8 @@ a.meanmenu-reveal {
 .mean-container .mean-nav {
 	float: left;
 	width: 100%;
-	background: black;
+	background: transparent;
+
 	margin-top: 74px;
 	margin-left: 10px;
 }
@@ -81,7 +87,7 @@ a.meanmenu-reveal {
 	position: relative;
 	float: left;
 	width: 100%;
-	background-color: black;
+	background-color: transparent;
 	/*border-bottom: 1px dashed #f9a392;*/
 	margin: 0;
 }

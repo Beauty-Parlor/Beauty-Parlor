@@ -4332,13 +4332,13 @@
   }
   
 }
-@media (max-width: 812px)
+@media (max-width: 1024px)
 {
     .modal-content {
       position: relative;
       background-color: #fefefe;
       margin: auto;
-      padding-top: 30%;
+      padding-top: 25%;
       width: 90%;
       max-width: 1200px;
       border: 0px;

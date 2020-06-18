@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -46,7 +45,8 @@
      var LastName=document.getElementById('lastName').value;
      var Email=document.getElementById('email').value;
      var MobileNo=document.getElementById('phoneNumber').value;
-     var SubEmail=document.getElementById('subscribeEmail').value;
+     var fname = -1;
+     
        var pattern1="^[a-zA-Z]+$";
        var reg1= new RegExp(pattern1);
        var pattern2="^[a-zA-Z]+$";
@@ -55,12 +55,17 @@
       var reg3 = new RegExp(pattern3);
       var pattern4="^[0-9]{10}$"; 
       var reg4 = new RegExp(pattern4);
+      var fname = -1;
+      var lname = -1;
+       var email1 = -1;
+       var mobile1=-1;
      
      
  
     if(reg1.test(FirstName))
        {
-         document.getElementById('errFirstName').innerHTML="";
+       fname = 1;
+     //   alert(fname);
        }
      else
        {
@@ -68,7 +73,8 @@
        }
        if(reg2.test(LastName))
       {
-        document.getElementById('errLastName').innerHTML="";
+          lname = 1;
+      //    alert(lname);
       }
     else
       {
@@ -76,7 +82,8 @@
       }
       if(reg3.test(Email))
 			{
-				document.getElementById('errEmail').innerHTML="";
+        email1 = 1;
+      //  alert(email1);
 			}
 		else
 			{
@@ -85,20 +92,20 @@
       
       if(reg4.test(MobileNo))
 			{
-				document.getElementById('errMobile').innerHTML="";
+        mobile1=1;
+      //  alert(mobile1);
 			}
 		else
 			{
 				document.getElementById('errMobile').innerHTML="Please Enter Valid Mobile No.";
       }
-      if(reg3.test(SubEmail))
-        {
-            document.getElementById('errEmail').innerHTML="";
-        }
-        else
-        {
-          document.getElementById('errEmail').innerHTML="Enter Valid E-mail Address.";
-         }
+
+      if(fname==1 && lname ==1 && email1 == 1 &&  mobile1==1)
+      {
+        swal ( "Success" , "Data Entry Sucessfully  ", "success");
+      }
+     
+     
 
       
    }
@@ -115,9 +122,9 @@
 
 
 
-  <!--********************************
-  ***** Code Start From Here *****
-  ******************************** -->
+  <!--************
+  ** Code Start From Here **
+  ************ -->
 
 
 
@@ -448,7 +455,7 @@
           </div>
           <!-- Single Input -->
           <div class="form-group col-12 mb-0 text-center">
-            <button class="def-btn" type="button" onclick =" myFun()">Get In Touch<span class="flaticon-right-arrow"></span></button>
+            <button class="def-btn" type="reset" onclick =" myFun()">Get In Touch<span class="flaticon-right-arrow"></span></button>
           </div>
         </div>
       </form>

@@ -37,80 +37,12 @@
 
   <!-- Theme Responsive -->
   <link rel="stylesheet" href="assets/css/responsive.css">
+  <script src="https://kit.fontawesome.com/2d80b9edc3.js" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
 
-  <script type="text/javascript">
-    function myFun(){
-     var FirstName=document.getElementById('firstName').value;
-     var LastName=document.getElementById('lastName').value;
-     var Email=document.getElementById('email').value;
-     var MobileNo=document.getElementById('phoneNumber').value;
-     var fname = -1;
-     
-       var pattern1="^[a-zA-Z]+$";
-       var reg1= new RegExp(pattern1);
-       var pattern2="^[a-zA-Z]+$";
-      var reg2= new RegExp(pattern2);
-      var pattern3="^[a-zA-Z@]"; 
-      var reg3 = new RegExp(pattern3);
-      var pattern4="^[0-9]{10}$"; 
-      var reg4 = new RegExp(pattern4);
-      var fname = -1;
-      var lname = -1;
-       var email1 = -1;
-       var mobile1=-1;
-     
-     
+
  
-    if(reg1.test(FirstName))
-       {
-       fname = 1;
-     //   alert(fname);
-       }
-     else
-       {
-         document.getElementById('errFirstName').innerHTML="Please Enter Valid FirstName.";
-       }
-       if(reg2.test(LastName))
-      {
-          lname = 1;
-      //    alert(lname);
-      }
-    else
-      {
-        document.getElementById('errLastName').innerHTML="Please Enter Valid LastName.";
-      }
-      if(reg3.test(Email))
-			{
-        email1 = 1;
-      //  alert(email1);
-			}
-		else
-			{
-				document.getElementById('errEmail').innerHTML="Please Enter Valid Email.";
-      }
-      
-      if(reg4.test(MobileNo))
-			{
-        mobile1=1;
-      //  alert(mobile1);
-			}
-		else
-			{
-				document.getElementById('errMobile').innerHTML="Please Enter Valid Mobile No.";
-      }
-
-      if(fname==1 && lname ==1 && email1 == 1 &&  mobile1==1)
-      {
-        swal ( "Success" , "Data Entry Sucessfully  ", "success");
-      }
-     
-     
-
-      
-   }
-   </script>
-
 
 
 </head>
@@ -597,7 +529,77 @@
 
   
 
-  
+  <script type="text/javascript">
+    function myFun(){
+     var FirstName=document.getElementById('firstName').value;
+     var LastName=document.getElementById('lastName').value;
+     var Email=document.getElementById('email').value;
+     var MobileNo=document.getElementById('phoneNumber').value;
+     
+       var pattern1="^[a-zA-Z]+$";
+       var reg1= new RegExp(pattern1);
+       var pattern2="^[a-zA-Z]+$";
+      var reg2= new RegExp(pattern2);
+      var pattern3="^[a-zA-Z@]"; 
+      var reg3 = new RegExp(pattern3);
+      var pattern4="^[0-9]{10}$"; 
+      var reg4 = new RegExp(pattern4);
+      var fname = -1;
+      var lname = -1;
+       var email1 = -1;
+       var mobile1=-1;
+     
+     
+ 
+    if(reg1.test(FirstName))
+       {
+       fname = 1;
+     //   alert(fname);
+       }
+     else
+       {
+         document.getElementById('errFirstName').innerHTML="Please Enter Valid FirstName.";
+       }
+       if(reg2.test(LastName))
+      {
+          lname = 1;
+      //    alert(lname);
+      }
+    else
+      {
+        document.getElementById('errLastName').innerHTML="Please Enter Valid LastName.";
+      }
+      if(reg3.test(Email))
+			{
+        email1 = 1;
+      //  alert(email1);
+			}
+		else
+			{
+				document.getElementById('errEmail').innerHTML="Please Enter Valid Email.";
+      }
+      
+      if(reg4.test(MobileNo))
+			{
+        mobile1=1;
+      //  alert(mobile1);
+			}
+		else
+			{
+				document.getElementById('errMobile').innerHTML="Please Enter Valid Mobile No.";
+      }
+
+      if(fname==1 && lname ==1 && email1 == 1 &&  mobile1==1)
+      {
+        swal ( "Success" , "Data Entry Sucessfully  ", "success");
+      }
+    
+     
+     
+
+      
+   }
+   </script>
 
 
   <!-- Code end -->
@@ -622,6 +624,9 @@
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDC3Ip9iVC0nIxC6V14CKLQ1HZNF_65qEQ"></script>
   <!-- Main Js File -->
   <script src="assets/js/main.js"></script>
+
+
+  
 
   
 </body>

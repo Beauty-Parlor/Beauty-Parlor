@@ -2532,8 +2532,8 @@ element start
 02. header start here 
 ==================================*/
 header {
-  padding-left: 75px;
-  padding-right: 85px;
+ /* padding-left: 75px;
+  padding-right: 85px;*/
   padding-top: 7px;
   padding-bottom: 7px;
   position: -webkit-sticky;

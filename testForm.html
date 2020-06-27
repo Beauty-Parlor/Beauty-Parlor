@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <script src="assets/js/vendor/jquery-1.12.4.min.js"></script>
+        <style>
+            .invalid-tooltip{
+              border: 1px solid red;
+            }
+            .valid-tooltip{
+              border : 1px solid green;
+            }
+          </style>
+    </head>
+    <body>
+        <form>
+            <input type="text" id="FirstName" />
+        </form>
+    </body>
+    <script>
+       
+
+        $( document ).ready(function() {
+          $( "#FirstName" ).keyup(function() {
+            var fn = $('#FirstName').val();
+            if(fn=="arjun"){
+              $('#FirstName').removeClass('invalid-tooltip')
+              $('#FirstName').addClass('valid-tooltip')
+            }
+            else{
+              $('#FirstName').addClass('invalid-tooltip')
+              $('#FirstName').removeClass('valid-tooltip')
+            }
+          });
+        });
+      </script>
+
+<script>
+    $(document).ready(function(){
+       $(document).bind("contextmenu",function(e){
+          return false;
+       });
+    });
+    </script>
+</html>

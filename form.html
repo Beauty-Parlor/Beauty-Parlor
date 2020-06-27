@@ -2,27 +2,33 @@
 <html lang="en">
   
 <head>
+  <script src="assets/js/vendor/jquery-1.12.4.min.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js">
    <link rel="stylesheet" href="_variable.scss">
 
-   <!DOCTYPE html>
-   <html lang="en">
-   <head>
        <meta charset="UTF-8">
        <meta name="viewport" content="width=device-width, initial-scale=1.0">
        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js">
        <link rel="stylesheet" href="_variables.scss">
        <title>Document Title</title>
+    <style>
+      .invalid-tooltip{
+        border: 1px solid red;
+      }
+      .valid-tooltip{
+        border : 1px solid green;
+      }
+    </style>
    </head>
    <body>
        <div class="container">
            <form class="row g-3 needs-validation" novalidate>
                <div class="col-md-4">
                  <label  class="form-label">First name</label>
-                 <input type="text" class="form-control" id="validationCustom01" value="Mark" required>
+                 <input type="text" class="form-control" id="FirstName" value="Mark" required>
                  <div class="valid-feedback">
                    Looks good!
                  </div>
@@ -86,6 +92,8 @@
        </div>
       <script src="js/tut2.js"></script>
       <script src="js/tut6.js"></script>
+      
+  
       <script>
           // Example starter JavaScript for disabling form submissions if there are invalid fields
    (function () {
@@ -107,6 +115,24 @@
        })
    })()
       </script>
+
+<script>
+       
+
+  $( document ).ready(function() {
+    $( "#FirstName" ).keyup(function() {
+      var fn = $('#FirstName').val();
+      if(fn=='arjun'){
+        $('FirstName').removeClass('invalid-tooltip')
+        $('FirstName').addClass('valid-tooltip')
+      }
+      else{
+        $('FirstName').addClass('valid-tooltip')
+        $('FirstName').removeClass('invalid-tooltip')
+      }
+    });
+  });
+</script>
      
    </body>
    </html>

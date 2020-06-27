@@ -1073,6 +1073,25 @@
   <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDC3Ip9iVC0nIxC6V14CKLQ1HZNF_65qEQ"></script> -->
   <!-- Main Js File -->
   <script src="assets/js/main.js"></script>
+
+
+  <script>
+       
+
+    $( document ).ready(function() {
+      $( "#FirstName" ).keyup(function() {
+        var fn = $('#FirstName').val();
+        if(fn=='arjun'){
+          $('FirstName').removeClass('invalid-tooltip')
+          $('FirstName').addClass('valid-tooltip')
+        }
+        else{
+          $('FirstName').addClass('valid-tooltip')
+          $('FirstName').removeClass('invalid-tooltip')
+        }
+      });
+    });
+  </script>
   
  
   

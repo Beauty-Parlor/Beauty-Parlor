@@ -167,7 +167,7 @@ Table of content
 }
 
 .bg-light {
-  background: ##74b9ff !important;
+  /* background: ##74b9ff !important; */
 }
 
 .background-image {
@@ -920,7 +920,7 @@ Table of content
   position: relative;
   display: inline-block;
   margin: 0 auto;
-  background-color: ##74b9ff;
+  /* background-color: ##74b9ff; */
 }
 
 .tab-swipe li {
@@ -3006,7 +3006,7 @@ header.sticky {
   position: absolute;
   left: -15px;
   top: 0;
-  border-top: 15px 
+  border-top: 15px ;
   border-left: 15px solid transparent;
 }
 
@@ -4343,7 +4343,7 @@ header.sticky {
 }
 
 .our-service-wrapper.v2 {
-  background-color: ##74b9ff !important;
+  /* background-color: ##74b9ff !important; */
   position: relative;
   padding-bottom: 0;
 }
@@ -5481,7 +5481,7 @@ form.appointment-form.v2 .form-group {
 }
 
 .price-plans-wrapper .price-table {
-  background-color: ##74b9ff;
+  /* background-color: ##74b9ff; */
   border-bottom: 10px solid transparent;
   padding: 0 100px;
   padding-top: 95px;
@@ -7888,7 +7888,7 @@ footer.v2 .footer-copyright ul.footer-social-menu li a {
   position: absolute;
   left: 210px;
   right: 210px;
-  background-color: ##74b9ff;
+  /* background-color: ##74b9ff; */
   height: 100%;
   top: 0;
   z-index: -1;
@@ -9211,7 +9211,7 @@ footer.v2 .footer-copyright ul.footer-social-menu li a {
 22. Bouchers Section
 ==================================*/
 .bouchers-sec-wrap .boucher {
-  background-color: ##74b9ff;
+  /* background-color: ##74b9ff; */
 }
 
 .bouchers-sec-wrap .boucher .boucher-img {

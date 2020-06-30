@@ -166,9 +166,9 @@ Table of content
   background-color: #74b9ff !important;
 }
 
-.bg-light {
-  /* background: ##74b9ff !important; */
-}
+/* .bg-light {
+  background: ##74b9ff !important;
+} */
 
 .background-image {
   -webkit-background-size: 100% 100%;
@@ -3203,7 +3203,7 @@ header.sticky {
           animation-delay: .5s;
 }
 
-.hero-sec-wrapper .single-hero-slide.slick-current .slider-big-img:before, .hero-sec-wrapper .single-hero-slide.slick-current .slider-big-img:after {
+/* .hero-sec-wrapper .single-hero-slide.slick-current .slider-big-img:before, .hero-sec-wrapper .single-hero-slide.slick-current .slider-big-img:after {
   -webkit-animation-name: scaling;
      -moz-animation-name: scaling;
        -o-animation-name: scaling;
@@ -3224,7 +3224,7 @@ header.sticky {
      -moz-animation-delay: 1.3s;
        -o-animation-delay: 1.3s;
           animation-delay: 1.3s;
-}
+} */
 
 .hero-sec-wrapper .single-hero-slide.slick-current .slider-big-img:before {
   -webkit-animation-delay: 3s;
@@ -9210,9 +9210,9 @@ footer.v2 .footer-copyright ul.footer-social-menu li a {
 /*=================================
 22. Bouchers Section
 ==================================*/
-.bouchers-sec-wrap .boucher {
-  /* background-color: ##74b9ff; */
-}
+/* .bouchers-sec-wrap .boucher {
+  background-color: ##74b9ff;
+} */
 
 .bouchers-sec-wrap .boucher .boucher-img {
   overflow: hidden;

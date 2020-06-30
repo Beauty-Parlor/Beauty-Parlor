@@ -33,7 +33,7 @@
   </style>
   <!-- Theme Responsive -->
   <link rel="stylesheet" href="assets/css/responsive.css">
-  <script src="https://kit.fontawesome.com/2d80b9edc3.js" crossorigin="anonymous"></script>
+  
   <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
   
   
@@ -554,7 +554,7 @@
               </div>
               <!-- Single Input -->
               <div class="form-group col-12 mb-0 text-center">
-                <button class="def-btn" type="reset">
+                <button class="def-btn" type="submit">
                   Get In Touch
                   <span class="flaticon-right-arrow"></span>
                 </button>
@@ -979,7 +979,7 @@ var forms = document.querySelectorAll('.needs-validation')
 // Loop over them and prevent submission
 Array.prototype.slice.call(forms)
  .forEach(function (form) {
-   form.addEventListener('reset', function (event) {
+   form.addEventListener('submit', function (event) {
      if (!form.checkValidity()) {
        event.preventDefault()
        event.stopPropagation()

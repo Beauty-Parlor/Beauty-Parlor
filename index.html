@@ -546,7 +546,7 @@
               </div>
               <!-- Single Input -->
               <div class="form-group col-12 mb-0 text-center">
-                <button class="def-btn">
+                <button class="def-btn" type="reset">
                   Get In Touch
                   <span class="flaticon-right-arrow"></span>
                 </button>
@@ -972,7 +972,7 @@ var finel=-1;
 // Loop over them and prevent submission
 Array.prototype.slice.call(forms)
  .forEach(function (form) {
-   form.addEventListener('submit', function (event) {
+   form.addEventListener('reset', function (event) {
      if (!form.checkValidity()) {
       
        event.preventDefault()

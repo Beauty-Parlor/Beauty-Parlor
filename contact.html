@@ -312,7 +312,7 @@
           <!-- SIngle Input -->
           <div class="form-group col-md-6">
             <label for="phoneNumber" class="sr-only">Phone Number</label>
-            <input class="form-control" id="phoneNumber" type="email" name="phoneNumber" placeholder="Phone Number" required>
+            <input class="form-control" id="phoneNumber" type="number" name="phoneNumber" placeholder="Phone Number" required>
             <div class="valid-feedback">
               Looks good!
             </div>
@@ -338,14 +338,14 @@
           <div class="form-group col-12">
             <label for="message" class="sr-only">Message</label>
             <textarea class="form-control" name="message" id="message" cols="30" rows="10" placeholder="Type message"  required="required"></textarea>
-            <i class="flaticon-phone"></i>
+            <i class="flaticon-user"></i>
            
           
           </div>
           </div>
           <!-- Single Input -->
           <div class="form-group col-12 mb-0 text-center">
-            <button class="def-btn" type="submit" >Get In Touch<span class="flaticon-right-arrow"></span></button>
+            <button class="def-btn" type="reset" >Get In Touch<span class="flaticon-right-arrow"></span></button>
           </div>
         </div>
       </form>
@@ -514,16 +514,24 @@
 
 // Fetch all the forms we want to apply custom Bootstrap validation styles to
 var forms = document.querySelectorAll('.needs-validation')
+var finel=-1;
 
 // Loop over them and prevent submission
 Array.prototype.slice.call(forms)
  .forEach(function (form) {
-   form.addEventListener('submit', function (event) {
+   form.addEventListener('reset', function (event) {
      if (!form.checkValidity()) {
        event.preventDefault()
        event.stopPropagation()
      }
+     else{
+       finel = 1;
+     }
      form.classList.add('was-validated')
+     if(finel==1){
+    //  alert("hii");
+    swal ( "Response Recorded" , " We Will Contact You Soon.. ", "success");
+    }
    }, false)
  })
 })()

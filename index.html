@@ -546,7 +546,7 @@
               </div>
               <!-- Single Input -->
               <div class="form-group col-12 mb-0 text-center">
-                <button class="def-btn" type="submit">
+                <button class="def-btn">
                   Get In Touch
                   <span class="flaticon-right-arrow"></span>
                 </button>
@@ -967,19 +967,32 @@
 
 // Fetch all the forms we want to apply custom Bootstrap validation styles to
 var forms = document.querySelectorAll('.needs-validation')
+var finel=-1;
 
 // Loop over them and prevent submission
 Array.prototype.slice.call(forms)
  .forEach(function (form) {
    form.addEventListener('submit', function (event) {
      if (!form.checkValidity()) {
+      
        event.preventDefault()
        event.stopPropagation()
      }
+     else{
+       finel = 1;
+    // 
+     }
      form.classList.add('was-validated')
+     if(finel==1){
+    //  alert("hii");
+    swal ( "Success" , "Data Entry Sucessfully  ", "success");
+    }
    }, false)
  })
+
 })()
+
+   
 </script>
 
 
